@@ -1,8 +1,9 @@
-s = " "
-t = str(input("Введіть речення: "))
+sentence = input("Введіть речення: ")
+word_list = sentence.split()
 
-t_words = t.split()
-
-t_words[0], t_words[-1] = t_words[-1], t_words[0]
-
-print(s.join(t_words))
+if len(word_list) > 1:
+    word_list[0], word_list[-1] = word_list[-1], word_list[0]
+    new_sentence = " ".join(word_list)
+    print(new_sentence)
+else:
+    print(sentence)

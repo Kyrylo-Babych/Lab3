@@ -1,5 +1,3 @@
-t = str(input("Введіть слово: "))
-
-full_slice = t[:]
-
+word = str(input("Введіть слово: "))
+full_slice = word[:]
 print(full_slice)
